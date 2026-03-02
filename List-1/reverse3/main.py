@@ -8,7 +8,7 @@ def reverse3(nums):
 def reverse3(nums):
     output = []
 
-    for index in range(len(nums) - 1, -1, -1): # What does this mean? 
+    for index in range(len(nums) - 1, -1, -1): # What does this mean?
         output.append(nums[index])
 
     return output
