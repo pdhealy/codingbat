@@ -30,6 +30,19 @@ def rotate_left3(nums):
   output.append(nums[0])
   return output
 
+# Version 5 (Using a while and for loop)
+def rotate_left3(nums):
+  output = []
+  index = 1
+
+  while index < len(nums):
+    curr_num = nums[index]
+    output.append(curr_num)
+    index += 1
+
+  output.append(nums[0])
+  return output
+
 if __name__ == "__main__":
     # Example test cases
     print(rotate_left3([1, 2, 3]))  # Output: [2, 3, 1]
