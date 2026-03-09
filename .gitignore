@@ -159,3 +159,6 @@ Thumbs.db
 .idea/
 *.swp
 *~
+
+# Custom files/folders
+templates/
