@@ -1,10 +1,7 @@
-FROM ubuntu:latest
+FROM python:3-slim
 
 RUN apt-get update && apt-get install -y \
     git \
-    python3 \
-    python3-pip \
-    python3-venv \
     openssh-server \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*

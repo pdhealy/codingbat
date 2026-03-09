@@ -7,7 +7,7 @@
   "workspaceFolder": "/workspace",
   "forwardPorts": [2222],
   "appPort": ["2222:22"],
-  "postCreateCommand": "python3 -m venv /workspace/.venv --clear",
+  "postCreateCommand": "python3 -m venv /workspace/.venv --clear && echo 'source /workspace/.venv/bin/activate' >> ~/.bashrc",
   "postStartCommand": "service ssh start",
   "customizations": {
     "vscode": {
