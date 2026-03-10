@@ -21,6 +21,22 @@ def xyz_there(str):
 
     return False
 
+# Version 3 (Using while loop)
+def xyz_there(str):
+    index = 0
+    
+    while index <= len(str) - 3:
+        if str[index - 1] == '.' and index > 0:
+            index += 1
+            continue
+        
+        if str[index:index + 3] == 'xyz':
+            return True
+        
+        index += 1
+    
+    return False
+
 
 if __name__ == "__main__":
     # Example test cases
