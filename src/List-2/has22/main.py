@@ -4,9 +4,9 @@
 
 def has22(nums):
     # Be careful with off-by-one loop boundaries (i.e., len(nums)+1))
-    for index in range(len(nums)-1):
+    for index in range(len(nums) - 1):
         if nums[index] == 2:
-            if nums[index+1] == nums[index]:
+            if nums[index + 1] == nums[index]:
                 return True
         continue
     return False
@@ -30,3 +30,14 @@ if __name__ == "__main__":
     print(has22([1, 2, 2]))  # Output: True
     print(has22([1, 2, 1, 2]))  # Output: False
     print(has22([2, 1, 2]))  # Output: False
+    print(has22([2, 2, 1, 2]))  # Output: True
+    print(has22([1, 3, 2]))  # Output: False
+    print(has22([1, 3, 2, 2]))  # Output: True
+    print(has22([2, 3, 2, 2]))  # Output: True
+    print(has22([4, 2, 4, 2, 2, 5]))  # Output: True
+    print(has22([1, 2]))  # Output: False
+    print(has22([2, 2]))  # Output: True
+    print(has22([2]))  # Output: False
+    print(has22([]))  # Output: False
+    print(has22([3, 3, 2, 2]))  # Output: True
+    print(has22([5, 2, 5, 2]))  # Output: False
